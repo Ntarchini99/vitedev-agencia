@@ -9,7 +9,6 @@ export const Features = () => {
 
     const animation = useAnimation()
 
-    // On place opaque reveal animation
     useEffect(() => {
         animation.start({
             y: 0,

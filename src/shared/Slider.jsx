@@ -28,7 +28,6 @@ const Slider = () => {
     }
 
     return (
-        // Project cards slider
         <div className='2xs:flex flex-col md:hidden'>
             <Swiper
                 ref={swiperRef}

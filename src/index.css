@@ -99,3 +99,9 @@
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgba(255,255,255,0.15730042016806722) 0%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
 }
+
+@media (max-width: 475px) and (min-width: 320px) {
+  .running-line {
+    display: none;
+  }
+}
