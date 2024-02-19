@@ -1,6 +1,6 @@
-import React from 'react'
-import logoNav from '@/assets/vitedevv.png'
-import { motion } from 'framer-motion'
+import React from 'react';
+import logoNav from '@/assets/nave-sola-remove.png';
+import { motion } from 'framer-motion';
 
 export const Navbar = () => {
 

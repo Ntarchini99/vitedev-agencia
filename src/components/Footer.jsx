@@ -1,5 +1,5 @@
 import { React, forwardRef } from 'react'
-import logoFooter from '@/assets/vitedevv.png'
+import logoFooter from '@/assets/nave-sola-remove.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareXTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 

@@ -5,7 +5,6 @@ import { animate, motion, useAnimation } from 'framer-motion'
 
 export const Hero = () => {
 
-    // Preloading background slide animation
     const controls = useAnimation()
     const [isLoading, setIsLoading] = useState(true)
 
