@@ -1,7 +1,7 @@
-import { React, forwardRef } from 'react'
-import logoFooter from '@/assets/nave-sola-remove.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareXTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { React, forwardRef } from 'react';
+import logoFooter from '@/assets/nave-sola-remove.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 export const Footer = forwardRef(function Footer(props, ref) {

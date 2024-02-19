@@ -1,8 +1,8 @@
-import { motion, useInView, useAnimation } from 'framer-motion'
-import { useEffect, useRef } from 'react'
-import process1 from '@/assets/process1.png'
-import process2 from '@/assets/process2.png'
-import process3 from '@/assets/process3.png'
+import { motion, useInView, useAnimation } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import process1 from '@/assets/process1.png';
+import process2 from '@/assets/process2.png';
+import process3 from '@/assets/process3.png';
 
 export const Process = () => {
 
@@ -18,7 +18,6 @@ export const Process = () => {
     const animationSecond = useAnimation()
     const animationThird = useAnimation()
 
-    // First element animation from left to right
     useEffect(() => {
         if (isInViewFirst) {
             animationFirst.start({
@@ -39,7 +38,6 @@ export const Process = () => {
         }
     }, [isInViewFirst, animationFirst])
 
-    // Second element animation from right to left  
     useEffect(() => {
         if (isInViewSecond) {
             animationSecond.start({
@@ -60,7 +58,6 @@ export const Process = () => {
         }
     }, [isInViewSecond, animationSecond])
 
-    // Third element animation from left to right
     useEffect(() => {
         if (isInViewThird) {
             animationThird.start({
@@ -86,7 +83,6 @@ export const Process = () => {
 
     const animation = useAnimation()
 
-    // On place opaque reveal animation
     useEffect(() => {
         animation.start({
             y: 0,
@@ -100,16 +96,16 @@ export const Process = () => {
 
     return (
         <section className='2xs:px-[1rem] md:px-[6rem] xl:px-[16rem] 2xl:px-[28rem] 3xl:px-[32rem] backgroundGradient overflow-hidden'>
-            <motion.div 
+            <motion.div
                 className='flex flex-col sm:my-20 2xs:mt-20 2xs:mb-0'
-                ref={processRef} 
+                ref={processRef}
                 animate={animation}
             >
                 <p className='text-blue-mid font-bold text-lg sm:mx-auto sm:py-2'>Nuestro proceso</p>
                 <h2 className='text-blue-dark font-semibold xs:text-4xl 2xs:text-2xl sm:mx-auto'>¿Como funciona?</h2>
             </motion.div>
             <div className='flex flex-col'>
-                <motion.div 
+                <motion.div
                     className='flex 2xs:flex-col 2xs:my-10 sm:flex-row sm:my-0 items-center w-full'
                     ref={firstRef}
                     animate={animationFirst}
@@ -125,11 +121,11 @@ export const Process = () => {
                         <img src={process1} alt="process-image" />
                     </div>
                 </motion.div>
-                <motion.div 
+                <motion.div
                     className='flex 2xs:flex-col-reverse 2xs:my-10 sm:flex-row items-center w-full'
                     ref={secondRef}
                     animate={animationSecond}
-                    >                    
+                >
                     <div className='sm:w-1/2'>
                         <img src={process2} alt="process-image" />
                     </div>
@@ -141,7 +137,7 @@ export const Process = () => {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div 
+                <motion.div
                     className='flex 2xs:flex-col 2xs:my-10 sm:flex-row items-center w-full'
                     ref={thirdRef}
                     animate={animationThird}

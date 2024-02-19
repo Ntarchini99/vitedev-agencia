@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
-import hero from '@/assets/hero.png'
-import { useFormContext } from '@/components/Form/FormContext'
-import { animate, motion, useAnimation } from 'framer-motion'
+import { useEffect, useRef, useState } from 'react';
+import hero from '@/assets/hero.png';
+import { useFormContext } from '@/components/Form/FormContext';
+import { animate, motion, useAnimation } from 'framer-motion';
 
 export const Hero = () => {
 
@@ -25,7 +25,6 @@ export const Hero = () => {
         }
     }, [isLoading, controls])
 
-    // Preloading text reveal animation
     const cooperRef = useRef()
     const daRef = useRef()
 
@@ -35,7 +34,7 @@ export const Hero = () => {
             {
                 opacity: 1,
                 y: 0,
-            },  
+            },
             {
                 type: 'spring',
                 damping: 12,
@@ -51,7 +50,7 @@ export const Hero = () => {
             {
                 opacity: 1,
                 y: 0,
-            },  
+            },
             {
                 type: 'spring',
                 damping: 12,
@@ -61,7 +60,6 @@ export const Hero = () => {
         )
     }, [])
 
-    // Form configuration
     const { isFormVisible, setIsFormVisible } = useFormContext()
 
     const toggleForm = () => setIsFormVisible(!isFormVisible)
@@ -76,17 +74,17 @@ export const Hero = () => {
             ></motion.div>
             <div className='flex sm:flex-row 2xs:flex-col justify-between items-center w-full overflow-hidden'>
                 <div className='flex flex-col sm:w-1/2'>
-                    <motion.div 
-                        ref={cooperRef} 
-                        initial={{ opacity: 0, y: 30, color: 'white'}} 
+                    <motion.div
+                        ref={cooperRef}
+                        initial={{ opacity: 0, y: 30, color: 'white' }}
                         className={`relative z-[45]`}>
                         <h1 className={`text-blue-dark xs:text-7xl 2xs:text-5xl sm:text-right font-bold pb-2 ${revealing ? 'text-blue-dark' : 'text-white'} transition duration-700 ease-in-out tracking-tighter`}>ViteDev</h1>
                     </motion.div>
-                    <motion.div 
-                        ref={daRef} 
-                        initial={{ opacity: 0, y: 30, color: 'white'}} 
+                    <motion.div
+                        ref={daRef}
+                        initial={{ opacity: 0, y: 30, color: 'white' }}
                         className={`relative z-[45]`}>
-                        <h1 className={`text-blue-dark xs:text-6xl 2xs:text-4xl sm:text-right font-bold ${revealing ? 'text-blue-dark' : 'text-white'} transition duration-700 ease-in-out tracking-tighter`}>Digital Agency</h1>
+                        <h1 className={`text-blue-dark xs:text-6xl 2xs:text-4xl sm:text-right font-bold ${revealing ? 'text-blue-dark' : 'text-white'} transition duration-700 ease-in-out tracking-tighter`}>Agencia Digital</h1>
                     </motion.div>
                     <div className='flex w-full sm:py-4 2xs:py-2'>
                         <div className='2xs:w-0 sm:w-1/6 md:w-2/6'></div>
@@ -97,7 +95,7 @@ export const Hero = () => {
                     </div>
                 </div>
                 <div className='sm:w-1/2 2xs:hidden sm:flex'>
-                    <img src={hero} alt="hero" className='w-[90%] bg-cover' />
+                    <img src={hero} alt="hero" className='w-[90%] bg-cover hero' />
                 </div>
             </div>
         </section>

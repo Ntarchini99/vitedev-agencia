@@ -32,11 +32,6 @@ export const Navbar = () => {
                             bounce: 0.5,
                         }}
                     >
-                        <a href="mailto:vitedevagency@gmail.com" target='blank' className='px-6 pt-4'>
-                            <span className='underlineHover text-blue-mid font-semibold cursor-pointer'>
-                                Enviar Email
-                            </span>
-                        </a>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, y: -50 }}
@@ -48,12 +43,12 @@ export const Navbar = () => {
                             bounce: 0.5,
                         }}
                     >
-                        <a 
+                        <a
                             className='bg-blue-dark px-6 py-4 rounded-full hover:bg-blue-dark-opaque transition duration-500'
-                            href="mailto:vitedevagency@gmail.com" 
+                            href="mailto:vitedevagency@gmail.com"
                             target='_blank'
                         >
-                            <span  className='text-white'>Programar Meet</span>
+                            <span className='text-white'>Enviar un Email</span>
                         </a>
                     </motion.div>
                 </div>

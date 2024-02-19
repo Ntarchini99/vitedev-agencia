@@ -1,0 +1,25 @@
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: floatAnimation 2s ease-in-out infinite;
+}
+
+.whatsapp-container img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+@keyframes floatAnimation {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}

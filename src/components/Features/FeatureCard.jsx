@@ -26,11 +26,11 @@ function FeatureCard({ image, heading, description, ...props }) {
                 opacity: 0,
             })
         }
-        
+
     }, [isInView, animation])
 
     return (
-        <motion.div 
+        <motion.div
             className="border-[1px] rounded-md bg-blue-light border-blue-light px-8 py-6 2xs:min-h-[350px] md:min-h-fit 2xs:cursor-grab md:cursor-default text-muted-foreground"
             ref={featureRef}
             animate={animation}

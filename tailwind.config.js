@@ -27,7 +27,7 @@ export default {
         'blue-mid': '#635BFF',
         'blue-dark': '#1C1953',
         'blue-dark-opaque': 'rgb(28, 25, 83, .8)',
-        'blue-opaque': 'rgba( 99, 91, 255, .1 )', 
+        'blue-opaque': 'rgba( 99, 91, 255, .1 )',
         'opaque-violett': 'rgba( 28, 25, 83, .7)',
         'opaque': 'rgba(0, 0, 0, .5)',
       },

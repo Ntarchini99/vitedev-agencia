@@ -55,7 +55,7 @@ export default function Feature() {
         },
     ];
 
-   
+
     const swiperRef = useRef(null)
 
     const handlePrev = () => {
@@ -74,7 +74,7 @@ export default function Feature() {
         <>
             {/* Feature cards slider */}
             <div className="2xs:flex flex-col md:hidden">
-                <Swiper 
+                <Swiper
                     ref={swiperRef}
                     breakpoints={{
                         280: {
@@ -94,31 +94,31 @@ export default function Feature() {
                     pagination={{ clickable: true }}
                     modules={{ FreeMode, Pagination }}
                     className="max-w-[100%] 2xs:max-h-[700px]">
-                        {featuresList.map((feature) => (
-                            <SwiperSlide key={feature.id}>
-                                <FeatureCard
-                                    image={feature.image}
-                                    heading={feature.heading}
-                                    description={feature.description}
-                                    className={' cursor-grab'}
-                                />
-                            </SwiperSlide>
-                        ))}
+                    {featuresList.map((feature) => (
+                        <SwiperSlide key={feature.id}>
+                            <FeatureCard
+                                image={feature.image}
+                                heading={feature.heading}
+                                description={feature.description}
+                                className={' cursor-grab'}
+                            />
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
                 <div className="flex justify-start gap-3 mx-4 pt-4">
-                    <FontAwesomeIcon 
-                        icon={faCircleArrowLeft} 
-                        style={{ color: '#1C1953' }} 
+                    <FontAwesomeIcon
+                        icon={faCircleArrowLeft}
+                        style={{ color: '#1C1953' }}
                         className='fa-2x hover:scale-110 transition duration-500 text-muted-foreground cursor-pointer'
                         onClick={handlePrev} />
-                    <FontAwesomeIcon 
-                        icon={faCircleArrowRight} 
-                        style={{ color: '#1C1953' }} 
+                    <FontAwesomeIcon
+                        icon={faCircleArrowRight}
+                        style={{ color: '#1C1953' }}
                         className='fa-2x hover:scale-110 transition duration-500 text-muted-foreground cursor-pointer'
                         onClick={handleNext} />
                 </div>
             </div>
-            
+
             {/* Feature cards table */}
             <div className="md:grid grid-cols-3 gap-3 2xs:hidden">
                 {featuresList.map((feature) => (

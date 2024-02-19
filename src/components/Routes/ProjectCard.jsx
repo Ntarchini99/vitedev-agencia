@@ -1,20 +1,17 @@
-import { motion, useInView, useAnimation } from 'framer-motion'
-import { useEffect, useRef } from 'react'
+import { motion, useInView, useAnimation } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 
 export const ProjectCard = ({ project }) => {
 
-    // Kind of 404 page
     if (!project) {
         return <div>Ooops... Project not found</div>
     }
 
-    // Hooks to animate section in viewport
     const projectRef = useRef(null)
     const isInView = useInView(projectRef, { once: true })
 
     const animation = useAnimation()
 
-    // From the top to the bottom reveal animation
     useEffect(() => {
         if (isInView) {
             animation.start({
@@ -33,11 +30,11 @@ export const ProjectCard = ({ project }) => {
                 opacity: 0,
             })
         }
-        
+
     }, [isInView, animation])
 
     return (
-        <motion.div 
+        <motion.div
             className='group flex flex-col rounded py-2 boxShadow hover:border-blue-mid hover:border-[1px] xs:my-2 md:my-0 2xs:min-h-[350px] md:min-h-fit 2xs:cursor-grab md:cursor-pointer text-muted-foreground'
             ref={projectRef}
             animate={animation}

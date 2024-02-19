@@ -10,10 +10,10 @@ import { FormProvider } from '@/components/Form/FormContext'
 import { useRef, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { projects } from './components/Routes/projects'
+import ButtonWhatsapp from './components/ButtonWhatsapp/ButtonWhatsapp'
 
 function App () {
 
-  // FAQ section background change on scroll
   const faqRef = useRef(null);
 
   useEffect(() => {
@@ -47,6 +47,7 @@ function App () {
 
   return (
     <FormProvider>
+      <ButtonWhatsapp/>
       <Navbar />
       <Hero />
       <Features />
