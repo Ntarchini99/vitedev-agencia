@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 export const ProjectCard = ({ project }) => {
 
     if (!project) {
-        return <div>Ooops... Project not found</div>
+        return <div>Ooops... Proyecto no encontrado</div>
     }
 
     const projectRef = useRef(null)
