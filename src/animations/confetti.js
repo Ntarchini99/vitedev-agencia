@@ -28,7 +28,6 @@ export const confetti = {
 	let supportsAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame;
     let colors = ["rgba(99, 91, 255, 0.05)", "rgba(99, 91, 255, 0.05)", "rgba(99, 91, 255, 0.05)", "rgba(99, 91, 255, 1)", "rgba(99, 91, 255, 1)", "rgba(99, 91, 255, 1)", "rgba(99, 91, 255, 1)", "rgba(99, 91, 255, 1)", "rgba(99, 91, 255, 1)", "rgba(28, 25, 83, 1)", "rgba(28, 25, 83, 1)", "rgba(28, 25, 83, 1)"];
 	let streamingConfetti = false;
-	let animationTimer = null;
 	let pause = false;
 	let lastFrameTime = Date.now();
 	let particles = [];

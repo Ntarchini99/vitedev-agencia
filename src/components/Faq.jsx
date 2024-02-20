@@ -5,7 +5,6 @@ import { useFormContext } from '@/components/Form/FormContext'
 
 export const Faq = forwardRef(function Faq(props, ref) {
 
-    // Form configuration
     const { isFormVisible, setIsFormVisible } = useFormContext()
 
     const toggleForm = () => setIsFormVisible(!isFormVisible)
@@ -39,7 +38,6 @@ export const Faq = forwardRef(function Faq(props, ref) {
         },
     ]);
 
-    // Text block animation
     const textRef = useRef(null)
     const isInView = useInView(textRef, { once: true })
     const animation = useAnimation()
@@ -56,8 +54,8 @@ export const Faq = forwardRef(function Faq(props, ref) {
     }, [isInView, animation])
 
     return (
-        <section className={`2xs:px-[1rem] md:px-[6rem] xl:px-[16rem] 2xl:px-[28rem] 3xl:px-[32rem] 2xl:py-20 lg:pb-6 lg:pt-20 2xs:py-6 transition duration-500 ease-in-out`} ref={ref} >
-            <div className='flex 2xs:flex-col sm:flex-row w-full xs:px-4'>
+        <section className={`2xs:px-[1rem] md:px-[6rem] xl:px-[16rem] 2xl:px-[28rem] 3xl:px-[32rem] 2xl:py-20 lg:pb-6 lg:pt-20 2xs:py-6 transition duration-500 ease-in-out `} ref={ref} >
+            <div className=' flex 2xs:flex-col sm:flex-row w-full xs:px-4'>
                 <motion.div 
                     className='flex flex-col sm:w-1/2'
                     ref={textRef}

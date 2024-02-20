@@ -67,24 +67,24 @@ export const Hero = () => {
     return (
         <section className=' 2xs:px-[1rem] md:px-[6rem] xl:px-[16rem] 2xl:px-[28rem] 3xl:px-[32rem] sm:pt-20 2xs:pt-10 pb-60'>
             <motion.div
-                className={`fixed top-0 right-0 w-full h-[100vh] bg-blue-mid flex items-center justify-center overflow-hidden z-[44] `}
+                className={`fixed top-0 right-0 w-full h-[100vh] bg-blue-200 flex items-center justify-center overflow-hidden z-[44] `}
                 initial={{ x: '0%' }}
                 animate={controls}
                 transition={{ duration: 0.7, type: 'tween' }}
             ></motion.div>
-            <div className='flex sm:flex-row 2xs:flex-col justify-between items-center w-full overflow-hidden'>
+            <div className='flex sm:flex-row 2xs:flex-col justify-between items-center w-full overflow-hidden heroo'>
                 <div className='flex flex-col sm:w-1/2'>
                     <motion.div
                         ref={cooperRef}
                         initial={{ opacity: 0, y: 30, color: 'white' }}
                         className={`relative z-[45]`}>
-                        <h1 className={`text-blue-dark xs:text-7xl 2xs:text-5xl sm:text-right font-bold pb-2 ${revealing ? 'text-blue-dark' : 'text-white'} transition duration-700 ease-in-out tracking-tighter`}>ViteDev</h1>
+                        <h1 className={`text-blue-dark xs:text-7xl 2xs:text-5xl sm:text-right font-bold pb-2 ${revealing ? 'text-blue-dark' : 'text-blue-dark'} transition duration-700 ease-in-out tracking-tighter`}>ViteDev</h1>
                     </motion.div>
                     <motion.div
                         ref={daRef}
                         initial={{ opacity: 0, y: 30, color: 'white' }}
                         className={`relative z-[45]`}>
-                        <h1 className={`text-blue-dark xs:text-6xl 2xs:text-4xl sm:text-right font-bold ${revealing ? 'text-blue-dark' : 'text-white'} transition duration-700 ease-in-out tracking-tighter`}>Agencia Digital</h1>
+                        <h1 className={`text-blue-dark xs:text-6xl 2xs:text-4xl sm:text-right font-bold ${revealing ? 'text-blue-dark' : 'text-blue-dark'} transition duration-700 ease-in-out tracking-tighter`}>Agencia Digital</h1>
                     </motion.div>
                     <div className='flex w-full sm:py-4 2xs:py-2'>
                         <div className='2xs:w-0 sm:w-1/6 md:w-2/6'></div>
