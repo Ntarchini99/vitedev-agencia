@@ -44,7 +44,7 @@ export const Navbar = () => {
                         }}
                     >
                         <a
-                            className='bg-blue-dark px-6 py-4 rounded-full hover:bg-blue-dark-opaque transition duration-500'
+                            className=' inline-block font-semibold bg-blue-dark px-6 py-4 rounded-full hover:bg-blue-dark-opaque transition duration-500'
                             href="mailto:vitedevagency@gmail.com"
                             target='_blank'
                         >
