@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { projects } from './Routes/projects';
 import { ProjectCard } from './Routes/ProjectCard';
 import Slider from '../shared/Slider';
@@ -40,9 +39,7 @@ export const Portfolio = () => {
                 <Slider />
                 <div className='md:grid grid-cols-3 gap-3 2xs:hidden'>
                     {projects.map((project) => (
-                        <Link to={`/project/${project.id}`} key={project.id} target='_blank'>
                             <ProjectCard project={project} />
-                        </Link>
                     ))}
                 </div>
                 <div className='flex 2xs:my-10 md:my-20'>

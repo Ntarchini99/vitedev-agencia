@@ -1,7 +1,7 @@
 import SSTR1 from '@/assets/Projects/6.png';
 import Daiwo1 from '@/assets/Projects/5.png';
 import Knebel1 from '@/assets/Projects/2.png';
-import Uwe1 from '@/assets/Projects/3.png';
+import Uwe1 from '@/assets/Projects/saborarte.png';
 import Yesor1 from '@/assets/Projects/1.png';
 import Yoti1 from '@/assets/Projects/4.png';
 
@@ -25,6 +25,7 @@ export const projects = [
         },
         tags: ['Frontend WEB'],
         images: [imagesList['yes-or']],
+        link: 'https://backlab-strategies.vercel.app/home'
     },
     {
         id: 'knebel',
@@ -38,10 +39,10 @@ export const projects = [
     },
     {
         id: 'uwe-hub',
-        'card-title': 'Vitestore',
+        'card-title': 'SaborArte',
         title: 'Uwehub: Educational Website',
         description: {
-            concept: "Landing Page con catálogo.",
+            concept: "Restaurante de muestra de Frontend.",
         },
         tags: ['Frontend Web'],
         images: [imagesList['uwe-hub']],
