@@ -28,6 +28,16 @@ export const projects = [
         link: 'https://backlab-strategies.vercel.app/home'
     },
     {
+        id: 'yoti',
+        'card-title': 'Libreria Online',
+        title: 'Yoti: E-Commerce Business Branding',
+        description: {
+            concept: "Libreria de Programacion y Trading Online.",
+        },
+        tags: ['Frontend Web',],
+        images: [imagesList.yoti],
+    },
+    {
         id: 'knebel',
         'card-title': 'CryptoS',
         title: 'Knebel: E-Commerce Development',
@@ -48,14 +58,14 @@ export const projects = [
         images: [imagesList['uwe-hub']],
     },
     {
-        id: 'yoti',
-        'card-title': 'Libreria Online',
-        title: 'Yoti: E-Commerce Business Branding',
+        id: 'sstr',
+        'card-title': 'Dashboard',
+        title: 'SSTR: Branding & Pitch-Deck Design',
         description: {
-            concept: "Libreria de Programacion y Trading Online.",
+            concept: "Dashboard completa.",
         },
-        tags: ['Frontend Web',],
-        images: [imagesList.yoti],
+        tags: ['Full Stack Web',],
+        images: [imagesList.sstr],
     },
     {
         id: 'd-a-i-wo',
@@ -67,16 +77,6 @@ export const projects = [
         tags: ['Full Stack Web'
         ],
         images: [imagesList['daiwo']],
-    },
-    {
-        id: 'sstr',
-        'card-title': 'Dashboard',
-        title: 'SSTR: Branding & Pitch-Deck Design',
-        description: {
-            concept: "Dashboard completa.",
-        },
-        tags: ['Full Stack Web',],
-        images: [imagesList.sstr],
     },
 ]
 

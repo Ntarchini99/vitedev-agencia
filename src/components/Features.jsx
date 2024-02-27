@@ -31,7 +31,8 @@ export const Features = () => {
             >
                 <p className='text-blue-mid font-bold text-lg'>Al elegirnos, usted...</p>
                 <h2 className='text-blue-dark font-semibold xs:text-4xl 2xs:text-2xl sm:my-2 2xs:my-1'>Libere todo el potencial de su visión</h2>
-                <p className='text-blue-dark md:pb-10 2xs:pb-6 sm:pr-80'>Respaldada por un Portfolio de más de <span className='text-blue-mid font-bold'>+70 proyectos ejecutados con éxito</span>, Nuestra agencia cuenta con experiencia en branding, marketing y desarrollo de aplicaciones/web de vanguardia.</p>
+                <p className='text-blue-dark md:pb-10 2xs:pb-6 sm:pr-80'>Respaldada por un Portfolio de más de <span className='text-blue-mid font-bold'>+50 proyectos realizados con éxito</span>, Nuestra agencia
+                 cuenta con una alta experiencia en Desarrollo de Sitios y Apps Web de vanguardia, como asi tambien en Marketing, Branding y Diseño UX UI.</p>
             </motion.div>
             <div>
                 <Feature />

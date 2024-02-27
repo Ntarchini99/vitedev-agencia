@@ -25,15 +25,15 @@ export default function Feature() {
         },
         {
             id: 2,
-            image: feature2,
-            heading: 'Branding y diseño gráfico.',
-            description: 'Experimente el arte de la marca, el diseño, la visualización 3D y más que dejen una impresión duradera en su audiencia.',
-        },
-        {
-            id: 3,
             image: feature3,
             heading: 'Creación de Prototipos y Diseño UI/UX',
             description: 'Embárquese en un viaje de flujo de trabajo optimizado, creación de prototipos y diseño centrado en el usuario que haga realidad su visión.',
+        },
+        {
+            id: 3,
+            image: feature2,
+            heading: 'Branding y diseño gráfico.',
+            description: 'Experimente el arte de la marca, el diseño, la visualización 3D y más que dejen una impresión duradera en su audiencia.',
         },
         {
             id: 4,
