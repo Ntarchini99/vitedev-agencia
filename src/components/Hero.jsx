@@ -94,7 +94,7 @@ export const Hero = () => {
                         <div className='sm:w-3/5'></div>
                     </div>
                 </div>
-                <div className='sm:w-1/2 2xs:hidden sm:flex'>
+                <div className='sm:w-1/2 2xs sm:flex mt-20'>
                     <img src={hero} alt="hero" className='w-[90%] bg-cover hero' />
                 </div>
             </div>
